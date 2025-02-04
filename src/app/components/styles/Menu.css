@@ -1,0 +1,223 @@
+/* Menu.css
+
+header {
+    background-color: #060b1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px 24px;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #E8E8E8;
+  }
+  
+  .logo span {
+    color: #F4D35E;
+  }
+  
+  .menu-icon {
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  
+  nav.open {
+    transform: translateX(0);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    margin: 20px 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: yellow;
+  }
+  
+  @media (min-width: 768px) {
+    nav {
+      position: relative;
+      transform: none;
+      width: auto;
+      background: transparent;
+      flex-direction: row;
+      padding: 0;
+    }
+  
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .menu-icon {
+      display: none;
+    }
+  }
+   */
+
+   /* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #101820;  */
+    color: #E8E8E8;
+  }
+  
+  /* Container Styles */
+  .container_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    /* max-width: 1200px; */
+    background-color: #101820; 
+
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #F4D35E;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo span {
+    color: #EE964B;
+  }
+  
+  /* Menu Icon Styles */
+  .menu-icon {
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden on larger screens */
+  }
+  
+  .menu-icon-close {
+    color: #F4D35E;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    font-size: 18px;
+    color: #E8E8E8;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #F4D35E;
+  }
+  
+  /* Mobile Menu Styles */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Show menu icon on small screens */
+    }
+  
+    nav {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 250px;
+      background-color: #101820;
+      border-radius: 8px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      padding: 20px;
+    }
+  
+    nav.open {
+      transform: translateX(0);
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  
+    nav a {
+      font-size: 22px;
+      padding: 15px;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  /* Hover and Focus Effects */
+  nav a:hover,
+  nav a:focus {
+    background-color: #EE964B;
+    border-radius: 5px;
+    color: #101820;
+  }
+  

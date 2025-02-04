@@ -1,0 +1,14 @@
+#about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about h1 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
